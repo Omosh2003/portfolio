@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omollo's Cybersecurity Portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<style>
+    body {
+        background-color: #0f172a;
+        color: #f1f5f9;
+        font-family: 'Inter', sans-serif;
+    }
+    .sidebar {
+        background-color: #1e293b;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sidebar a {
+        color: #cbd5e1;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+    .sidebar a:hover {
+        background-color: #3b82f6;
+        color: #fff;
+    }
+    .content {
+        margin-left: 270px;
+        padding: 20px;
+    }
+    .card {
+        background: #1e293b;
+        border-radius: 12px;
+        padding: 20px;
+        transition: transform 0.3s;
+    }
+    .card:hover {
+        transform: translateY(-8px);
+    }
+</style>
+</head>
+<body>
+<!-- Sidebar Navigation -->
+<div class="sidebar">
+    <h1 class="text-2xl font-bold text-white mb-6">Omollo</h1>
+    <a href="#home"><i class="fas fa-home"></i> Home</a>
+    <a href="#about"><i class="fas fa-user"></i> About</a>
+    <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
+    <a href="#blog"><i class="fas fa-blog"></i> Blog</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    <a href="CV.pdf" download class="mt-6 bg-blue-600 text-center rounded-lg p-2"><i class="fas fa-download"></i> Download CV</a>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+    <!-- Home -->
+    <section id="home" class="py-10">
+        <h2 class="text-4xl font-bold">Welcome to My Cybersecurity Portfolio</h2>
+        <p class="text-lg text-gray-400 mt-4">Ethical Hacker | Network Security Specialist | AI Security Innovator</p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-10">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-gray-300">I am a cybersecurity enthusiast passionate about ethical hacking, penetration testing, and AI-driven security solutions. My mission is to protect organizations by building proactive defense systems.</p>
+        <p class="italic text-blue-400 mt-4">"Prevention is better than detection." – Omollo</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-10">
+        <h2 class="text-3xl font-bold mb-6">Projects</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="card">
+                <h3 class="text-xl font-semibold mb-2">SalamaNet AI</h3>
+                <p class="text-gray-400">AI-based threat detection for educational networks across Africa.</p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold mb-2">Phishing Detection System</h3>
+                <p class="text-gray-400">Real-time email phishing detection using machine learning.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="py-10">
+        <h2 class="text-3xl font-bold mb-4">Latest Blog Posts</h2>
+        <ul class="list-disc ml-6 text-gray-400">
+            <li><a href="#" class="text-blue-400 hover:underline">Top 10 Cybersecurity Trends in 2025</a></li>
+            <li><a href="#" class="text-blue-400 hover:underline">AI vs Hackers: The Future of Security</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-10">
+        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+        <p>Email: <a href="mailto:omollo@example.com" class="text-blue-400">omollo@example.com</a></p>
+        <div class="mt-4 flex gap-4">
+            <a href="#" class="text-blue-500"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#" class="text-blue-500"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </section>
+</div>
+</body>
+</html>
